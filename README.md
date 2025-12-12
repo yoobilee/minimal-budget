@@ -1,5 +1,9 @@
 # 💰 미니멀 가계부 (Minimal Budget)
 
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+
 **Flutter**와 **Firebase**를 활용하여 개발한 심플하고 직관적인 개인 자산 관리(가계부) 애플리케이션입니다.  
 복잡한 기능은 덜어내고, 사용자가 꼭 필요한 **수입/지출 내역**을 **달력(Calendar)** 형태로 한눈에 파악할 수 있도록 구현했습니다.
 
@@ -26,14 +30,24 @@
 
 ## 🛠 기술 스택 (Tech Stack)
 
-* **Framework:** Flutter (Dart)
-* **Backend:** Firebase (Authentication, Cloud Firestore)
-* **State Management:** `StatefulWidget` & `StreamBuilder` (Real-time updates)
-* **Key Packages:**
-    * `firebase_core`, `firebase_auth`, `cloud_firestore`
-    * `google_sign_in`
-    * `table_calendar`
-    * `intl`
+### Environment
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+### Development
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
+
+### Backend & Database
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+
+### Key Packages
+* `firebase_core`, `firebase_auth`, `cloud_firestore`
+* `google_sign_in`
+* `table_calendar`
+* `intl`
 
 ## 📱 실행 방법 (Getting Started)
 
@@ -58,12 +72,6 @@
     ```bash
     flutter run
     ```
-
-## 📸 스크린샷 (Screenshots)
-
-| 로그인 화면 | 메인 캘린더 | 입력 다이얼로그 |
-|:---:|:---:|:---:|
-| (이미지 추가 예정) | (이미지 추가 예정) | (이미지 추가 예정) |
 
 ---
 © 2025 Minimal Budget Project. All rights reserved.
