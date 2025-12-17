@@ -1,0 +1,33 @@
+name: Deploy Flutter to Cloudflare Pages
+
+on:
+  push:
+    branches: [ main ] # 메인 브랜치 이름 확인
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    name: Build and Deploy
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Build Web
+        run: flutter build web --release
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: minimal-budget # 여기에 프로젝트 이름
+          directory: build/web
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
